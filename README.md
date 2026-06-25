@@ -2,9 +2,7 @@
 Machine learning agent trained in SUMO to optimize traffic light control and reduce congestion.
 
 
-
-Uploading sumo-smart-traffic-light-agent.mp4…
-
+https://github.com/user-attachments/assets/c242069e-c2da-4286-8dae-d6fa486cd0b8
 
 
 # SUMO Simulator Training Agent
