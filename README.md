@@ -53,7 +53,7 @@ The main components are:
                                │
                                ▼
                     ┌─────────────────────┐
-                    │ Traffic Light      │
+                    │ Traffic Light       │
                     │     Control         │
                     └──────────┬──────────┘
                                │
@@ -111,7 +111,7 @@ Spatial Cells
 80-Dimensional State Vector
         │
         ▼
-DQN
+       DQN
 ```
 
 ---
@@ -177,16 +177,16 @@ model.py
 The network receives the 80-dimensional traffic state and produces Q-values for the four available actions.
 
 ```text
-80 State Features
+ 80 State Features
        │
        ▼
    MLP Network
        │
        ▼
-4 Q-Values
+  4 Q-Values
        │
        ▼
-Best Action
+  Best Action
 ```
 
 ---
