@@ -174,23 +174,6 @@ The model is implemented in:
 model.py
 ```
 
-The network receives the 80-dimensional traffic state and produces Q-values for the four available actions.
-
-```text
- 80 State Features
-       │
-       ▼
-   MLP Network
-       │
-       ▼
-  4 Q-Values
-       │
-       ▼
-  Best Action
-```
-
----
-
 ## 🔄 Experience Replay
 
 The agent uses an **Experience Replay Memory** to improve training stability.
@@ -375,60 +358,7 @@ The current discount factor is:
 
 ---
 
-# 📊 Evaluation Metrics
 
-The system can be evaluated using traffic-performance indicators such as:
-
-* Total waiting time
-* Average waiting time
-* Queue length
-* Episode reward
-* Traffic throughput
-* Travel time
-
-These metrics can be used to compare the learned DQN controller with a baseline traffic-light strategy.
-
----
-
-# 🔬 Project Workflow
-
-```text
-Generate Traffic Routes
-          │
-          ▼
-      Start SUMO
-          │
-          ▼
-    Observe Traffic
-          │
-          ▼
-     Extract State
-          │
-          ▼
-      DQN Agent
-          │
-          ▼
-     Select Action
-          │
-          ▼
-  Change Traffic Phase
-          │
-          ▼
-     Calculate Reward
-          │
-          ▼
-    Store Experience
-          │
-          ▼
-    Train DQN Model
-          │
-          ▼
-      Next State
-          │
-          └───────────────► Repeat
-```
-
----
 
 # 📈 Expected Outcome
 
